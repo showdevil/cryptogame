@@ -11,7 +11,7 @@ form.addEventListener("submit", async (e) => {
   };
 
   try {
-    const res = await fetch("http://localhost:3000/api/encuesta", {
+    const res = await fetch("https://api.tameablebeast.online/api/encuesta", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),
