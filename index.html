@@ -3,46 +3,55 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>TameableBeast - Inicio</title>
-
+  <title>Egg Tap UI</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>TameableBeast</h1>
-    <p>Bienvenido. Completá esta mini encuesta para probar el envío al servidor.</p>
+  <div class="app">
 
-    <form id="formEncuesta">
-      <div>
-        <label for="nombre">Nombre</label>
-        <input type="text" id="nombre" placeholder="Ej: Juan" required />
+    <!-- TOP BAR -->
+    <header class="topbar">
+      <div class="profile">
+        <div class="avatar"></div>
+        <div class="profile-info">
+          <div class="name">RadioHead</div>
+          <div class="lvl">LVL 16</div>
+        </div>
       </div>
 
-      <div>
-        <label for="edad">Edad</label>
-        <input type="number" id="edad" placeholder="Ej: 25" required />
+      <div class="points">190.500</div>
+    </header>
+
+    <!-- PROGRESS -->
+    <section class="progress">
+      <div class="progress-header">
+        <span>Egg broken</span>
+        <span>48/100</span>
       </div>
 
-      <div>
-        <label for="gusta">¿Te gusta el juego?</label>
-        <select id="gusta">
-          <option value="si">Sí</option>
-          <option value="no">No</option>
-        </select>
+      <div class="progress-bar">
+        <div class="progress-fill" style="width: 48%;"></div>
+      </div>
+    </section>
+
+    <!-- MAIN -->
+    <main class="main">
+      <div class="egg-wrap">
+        <div class="egg"></div>
+
+        <div class="platform">
+          <div class="platform-inner"></div>
+        </div>
       </div>
 
-      <button type="submit">Enviar encuesta</button>
-    </form>
+      <p class="hint">Touch egg to broken</p>
+    </main>
 
-    <p id="respuesta">Esperando respuesta...</p>
+    <!-- BUTTON -->
+    <footer class="footer">
+      <button class="cta"></button>
+    </footer>
 
-    <div class="nav">
-      <a href="/perfil">Ir a Perfil</a>
-      <a href="/recompensas">Ir a Recompensas</a>
-    </div>
   </div>
-
-  <script src="/app.js"></script>
 </body>
 </html>
